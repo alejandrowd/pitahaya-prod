@@ -2,12 +2,12 @@
 {% load static %}
 
 {% block content %}
+<!-- Hero -->
 <section class="hero" id="hero">
-    <div class="wrapper">
-
-      <video autoplay muted loop id="myVideo">
-        <source src="{% static 'videos/timelapse_sunset.mp4' %}" type="video/mp4">
-      </video>
+  <div class="wrapper">
+    <video autoplay muted loop id="myVideo">
+      <source src="{% static 'videos/timelapse_sunset.mp4' %}" type="video/mp4">
+    </video>
     <h1><strong>pitahaya</strong> es una agencia especializada en <strong>branding</strong>, <strong>diseño</<strong></strong>, <strong>marketing digital</strong> y <strong>desarrollo web</strong>.</h1>
     <div class=lines>
       <span class=side-lines></span>
@@ -16,8 +16,79 @@
     <span class=logo>
       <img class="logo-brand" src="{% static 'images/brand/logotipo-pitahaya-white-nuevo-2.svg' %}" alt="pitahaya - Agencia digital" width="210px">
       <img class="isotipo-resp" src="{% static 'images/brand/isotipo-pitahaya-color.svg' %}" alt="pitahaya - Digital agency" width="35px" height="35px" id="nav-logo">
-
     </span>
   </div>
-  </section>
+</section>
+
+<!-- Agency Methodology -->
+<section class="agencia" id="agencia">
+  <div class="metodologia-bg">
+    <div class="wrapper">
+      <div class="metodologia-container">
+        <div class="item metodologia-pq-nosotros" data-sal-duration="300" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+          <h2>¿Por qué nosotros?</h2>
+          <p>We believe that great things come from being inspired. We combine branding, digital marketing, web design and web development
+            to build and refine your digital communication channels and business tools, so you can provide the best experience to your clients.
+            From big brands to inspiring startups, we are your business partner!</p>
+        </div>
+        <div class="item metodologia-description" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+          <h3>Nuestra Metodología</h3>
+          <h1>Design thinking by <strong>pitahaya.</strong></h1>
+          <p>Para poder conectar con las personas, necesitamos entenderlas, saber qué es realmente lo que necesitan, les gusta o están buscando. Necesitamos comenzar a formar parte de sus vidas. Para conseguirlo, hemos creado un proceso propio basado en metodologías como el <strong> Design Thinking,</strong> que nos permite realizar y encontrar la solución más adecuada, así como testeada y replanteada constantemente.</p>
+        </div>
+        <div class="item metodologia-slideshow" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+          <div class="slideshow-container">
+             <div class="mySlides fade">
+                 <img src="{% static 'images/metodologia-0.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
+                 <h4 class="titulo-slider">Design thinking by pitahaya</h4>
+                 <p class="descripcion-slider">Trabajamos bajo un proceso propio basado en metodologías como Design Thinking y Agile, que nos permite analizar, encontrar, y testear la solución más adecuada para cada negocio en particular.</p>
+             </div>
+             <div class="mySlides fade">
+                 <img  src="{% static 'images/metodologia-new-1.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
+                 <h4 class="titulo-slider">Descubrir</h4>
+                 <p class="descripcion-slider">Nos incorporamos en el contexto del cliente para entender el panorama actual, problemas e hipótesis. Además estudiamos el contexto del usuario o consumidor final para entender su comportamiento y necesidades.</p>
+             </div>
+             <div class="mySlides fade">
+                 <img  src= "{% static 'images/metodologia-new-2.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
+                 <h4 class="titulo-slider">Definir</h4>
+                 <p class="descripcion-slider">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+             </div>
+             <div class="mySlides fade">
+                 <img  src= "{% static 'images/metodologia-new-3.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
+                 <h4 class="titulo-slider">Comprobar</h4>
+                 <p class="descripcion-slider">Las ideas y conceptos son cuestionadas, criticadas y validadas. Creamos prototipos rápidos y los ponemos a prueba en el contexto donde fueron descubiertos. Retrocedemos, replanteamos, avanzamos y mejoramos hacia un concepto cada vez más aterrizado.</p>
+             </div>
+             <div class="mySlides fade">
+                 <img  src= "{% static 'images/metodologia-new-4.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
+                 <h4 class="titulo-slider">Desarrollar</h4>
+                 <p class="descripcion-slider">La dirección definida se comienza a desarrollar, haciéndose cada vez más real. Una vez terminada, la ponemos a prueba, para luego darle los últimos toques y tener una propuesta concreta.</p>
+             </div>
+             <div class="mySlides fade">
+                 <img  src= "{% static 'images/metodologia-new-5.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
+                 <h4 class="titulo-slider">Despegar</h4>
+                 <p class="descripcion-slider">Lo presentamos al usuario, lo lanzamos y medimos su impacto de acuerdo a los alcances definidos al inicio del proyecto. Es momento de "redescubrir" y entrar en un beta constante.</p>
+             </div>
+             <a class="prev" onclick='prevSlides(-1)'>&#10094;</a>
+             <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+          </div>
+             <div class="dots" style='text-align: center;'>
+               <span class="dot" onclick='currentSlide(1)'></span>
+               <span class="dot" onclick='currentSlide(2)'></span>
+               <span class="dot" onclick='currentSlide(3)'></span>
+               <span class="dot" onclick='currentSlide(4)'></span>
+               <span class="dot" onclick='currentSlide(5)'></span>
+               <span class="dot" onclick='currentSlide(6)'></span>
+             </div>
+        </div>
+        <div class="item metodologia-que-hacemos" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+          <h3>¿Qué hacemos?</h3>
+          <h1>Ayudamos a nuestros clientes a acelerar su <strong>crecimiento.</strong></h1>
+          <p>Creamos, transformamos y optimizamos la experiencia del cliente / usuario a través de la <strong>tecnología</strong> y el <strong>diseño de contenidos, productos y servicios digitales.</strong>  Entendemos que un proceso de transformación digital debe activarse desde distintos frentes de la compañía; en donde el Customer Experience debe ser el eje sobre el cual se transforman los procesos operacionales y se modifica el modelo de negocio.</p>
+        </div>
+
+
+
+    </div>
+  </div>
+</section>
 {% endblock %}
