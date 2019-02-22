@@ -1,5 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Home</h1>
+<section class="hero" id="hero">
+    <div class="wrapper">
+
+      <video autoplay muted loop id="myVideo">
+        <source src="{% static 'videos/timelapse_sunset.mp4' %}" type="video/mp4">
+      </video>
+    <h1><strong>pitahaya</strong> es una agencia especializada en <strong>branding</strong>, <strong>diseño</<strong></strong>, <strong>marketing digital</strong> y <strong>desarrollo web</strong>.</h1>
+    <div class=lines>
+      <span class=side-lines></span>
+      <span class=bottom-lines></span>
+    </div>
+    <span class=logo>
+      <img class="logo-brand" src="{% static 'images/brand/logotipo-pitahaya-white-nuevo-2.svg' %}" alt="pitahaya - Agencia digital" width="210px">
+      <img class="isotipo-resp" src="{% static 'images/brand/isotipo-pitahaya-color.svg' %}" alt="pitahaya - Digital agency" width="35px" height="35px" id="nav-logo">
+
+    </span>
+  </div>
+  </section>
 {% endblock %}
