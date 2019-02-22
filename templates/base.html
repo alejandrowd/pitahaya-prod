@@ -26,13 +26,17 @@
   {% endblock %}
   <!-- Footer -->
   {% include 'partials/_footer.html' %}
+  <!-- webGL -->
   {% include 'partials/_webgl.html' %}
-
 
 <script src="{% static 'js/app.js' %}" charset="utf-8"></script>
 <script src="{% static 'js/main.js' %}" charset="utf-8"></script>
 <script src="{% static 'js/portfolio.js' %}" charset="utf-8"></script>
 <script src="{% static 'js/modal.js' %}" charset="utf-8"></script>
+<script src="{% static 'js/mapa.js' %}" charset="utf-8"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL-LaogqPwdNIbYwoRyXYw1Mnd0be4ct4&callback=initMap">
+</script>
 
 </body>
 </html>
