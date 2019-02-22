@@ -15,6 +15,10 @@
   <title>Pitahaya Agencia Digital</title>
 </head>
 <body>
+  <script src="{% static 'js/three.js' %}"></script>
+  <script src="{% static 'js/WebGL.js' %}"></script>
+  <script src="{% static 'js/stats.min.js' %}"></script>
+  <script src="{% static 'js/dat.gui.min.js' %}"></script>
   <!-- Header Nav bar -->
   {% include 'partials/_navbar.html' %}
   <!-- Main Content -->
@@ -22,13 +26,10 @@
   {% endblock %}
   <!-- Footer -->
   {% include 'partials/_footer.html' %}
+  {% include 'partials/_webgl.html' %}
 
-  <script src="{% static 'js/three.js' %}"></script>
-  <script src="{% static 'js/WebGL.js' %}"></script>
-  <script src="{% static 'js/stats.min.js' %}"></script>
-  <script src="{% static 'js/dat.gui.min.js' %}"></script>
-  <script src="{% static 'js/app.js' %}" charset="utf-8"></script>
-  <script src="{% static 'js/main.js' %}" charset="utf-8"></script>
-
+  
+<script src="{% static 'js/app.js' %}" charset="utf-8"></script>
+<script src="{% static 'js/main.js' %}" charset="utf-8"></script>
 </body>
 </html>

@@ -88,12 +88,12 @@
     </div>
   </div>
 </section>
-
+<!-- Agency Mobile Slider -->
 <section>
   <div class="mobile-slider">
 
     <div class="slider">
-        <img src="images/mobile/slider-metodologia1.jpg" alt="">
+        <img src="{% static 'images/mobile/slider-metodologia1.jpg' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Design thinking by pitahaya</h4>
         <p class="center-mobile-text bg-mobile-text">Trabajamos bajo un proceso propio basado en metodologías
            como Design Thinking y Agile, que nos permite analizar, encontrar, y testear
@@ -101,17 +101,133 @@
     </div>
 
     <div class="slider">
-        <img src="images/mobile/slider-metodologia2.jpg" alt="">
+        <img src="{% static 'images/mobile/slider-metodologia2.jpg' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Descubrir</h4>
         <p class="center-mobile-text bg-mobile-text">Nos incorporamos en el contexto del cliente para entender el panorama actual, problemas e hipótesis. Además estudiamos el contexto del usuario o consumidor final para entender su comportamiento y necesidades.</p>
     </div>
 
     <div class="slider">
-        <img src="images/mobile/slider-metodologia3.jpg" alt="">
+        <img src="{% static 'images/mobile/slider-metodologia3.jpg' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Definir</h4>
         <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
     </div>
    </div>
 </section>
+
+<!-- Services -->
+<section class="servicios" id="servicios">
+    <div class="servicios-bg" id="serviciosFloating">
+      <div class="wrapper">
+            <div class="servicios-container">
+                  <div class="serv-item servicio-title">
+                    <h1>Nuestros <strong>servicios</strong></h1>
+                    <h3>Escuchamos, pensamos, creamos y te conectamos a tu audiencia</h3>
+                  </div>
+                  <div class="serv-item opcion servicio-estrategico" onclick='currentServicio(1)'>
+                    <h4>Servicio Estratégico</h4>
+                  </div>
+                  <div class="serv-item opcion servicio-creativo" onclick='currentServicio(2)'>
+                    <h4>Servicios de creatividad</h4>
+                  </div>
+                  <div class="serv-item opcion servicio-desarrollo" onclick='currentServicio(3)'>
+                    <h4>Servicios de desarrollo</h4>
+                  </div>
+
+                  <!-- responsive -->
+                  <div class="servicios-responsive estrategy-resp">
+                    <img src="{% static 'images/estrategy-icon-movil.png' %}" alt="Servicio estratégico">
+                    <h4>Servicio Estratégico</h4>
+                    <p>Diseñamos un plan basado en estrategias, con el propósito de alcanzar objetivos establecidos, apoyados en un pensamiento analítico con destrezas técnicas y creativas.
+                      Proporcionamos diversos conceptos a través de nuestro proceso PithayaThinking.</p>
+                      <div class="lista-tareas">
+                      <p>
+                        <span>Inbound marketing</span>
+                        <span>Social media</span>
+                        <span>SEO / SEM</span>
+                        <span>Diseño de experiencia de usuario</span>
+                      </p>
+                      </div>
+                  </div>
+
+                  <div class="servicios-responsive creative-resp">
+                    <img src="{% static 'images/creative-icon-movil.png' %}" alt="Servicio de creatividad">
+                    <h4>Servicio de creatividad</h4>
+                    <p>Construimos una relación de confianza y fidelidad entre tu marca y cliente, desarrollando un concepto creativo
+                       que genera una experiencia personal y emocional. Transformando tu marca y su relación con la sociedad.</p>
+                      <div class="lista-tareas">
+                       <p>
+                         <span>Identidad de marca</span>
+                         <span>Diseño digital / impresión</span>
+                         <span>Video / fotografía</span>
+                         <span>UI / UX</span>
+                       </p>
+                     </div>
+                  </div>
+                  <div class="servicios-responsive development-resp">
+                    <img src="{% static 'images/desarrollo-icon-movil.png' %}" alt="Servicio de desarrollo">
+                    <h4>Servicio de desarrollo</h4>
+                    <p>Innovamos en el desarrollo tecnólogico, optimizando y maximizando tu negocio actual, para poder identificar
+                       oportunidades de innovación combinando creatividad y tecnología. Te ofrecemos soluciones escalables que ayudarán
+                       a tu crecimiento.</p>
+                      <div class="lista-tareas">
+                       <p>
+                         <span>Web</span>
+                         <span>Aplicaciones móviles</span>
+                         <span>E-commerce</span>
+                       </p>
+                     </div>
+                  </div>
+                   <!-- fin responsive -->
+
+                  <div class="serv-item output-servicios fade">
+                    <h5>Sevicio Estratégico</h5>
+                    <p>Diseñamos un plan basado en estrategias, con el propósito de alcanzar objetivos establecidos, apoyados en un pensamiento analítico con destrezas técnicas y creativas.
+                      Proporcionamos diversos conceptos a través de nuestro proceso PithayaThinking.</p>
+                      <div class="lista-tareas">
+                      <p>
+                        <span>Inbound marketing</span>
+                        <span>Social media</span>
+                        <span>SEO / SEM</span>
+                        <span>Diseño de experiencia de usuario</span>
+                      </p>
+                      </div>
+                    <a href="#contacto" title="Learn more about pitahaya - Digital agency" class="btn2 home-btn"><span>Conoce más</span></a>
+                  </div>
+
+                  <div class="output-servicios fade">
+                    <h5>Sevicios de creatividad</h5>
+                    <p>Construimos una relación de confianza y fidelidad entre tu marca y cliente, desarrollando un concepto creativo
+                       que genera una experiencia personal y emocional. Transformando tu marca y su relación con la sociedad.</p>
+                      <div class="lista-tareas">
+                       <p>
+                         <span>Identidad de marca</span>
+                         <span>Diseño digital / impresión</span>
+                         <span>Video / fotografía</span>
+                         <span>UI / UX</span>
+                       </p>
+                     </div>
+                    <a href="#contacto" title="Learn more about pitahaya - Digital agency" class="btn2 home-btn"><span>Conoce más</span></a>
+                  </div>
+
+                  <div class="output-servicios fade">
+                    <h5>Sevicios de desarrollo</h5>
+                    <p>Innovamos en el desarrollo tecnólogico, optimizando y maximizando tu negocio actual, para poder identificar
+                       oportunidades de innovación combinando creatividad y tecnología. Te ofrecemos soluciones escalables que ayudarán
+                       a tu crecimiento.</p>
+                      <div class="lista-tareas">
+                       <p>
+                         <span>Web</span>
+                         <span>Aplicaciones móviles</span>
+                         <span>E-commerce</span>
+                       </p>
+                     </div>
+                    <a href="#contacto" title="Learn more about pitahaya - Digital agency" class="btn2 home-btn"><span>Conoce más</span></a>
+                  </div>
+                </div>
+
+      </div>
+    </div>
+</section>
+
 
 {% endblock %}
