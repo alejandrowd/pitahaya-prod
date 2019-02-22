@@ -224,9 +224,113 @@
                     <a href="#contacto" title="Learn more about pitahaya - Digital agency" class="btn2 home-btn"><span>Conoce más</span></a>
                   </div>
                 </div>
-
       </div>
     </div>
+</section>
+
+<!-- Portfolio -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-bg">
+    <div class="wrapper">
+
+        <div class="portfolio-header" data-sal-duration="1200" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-out-bounce" >
+          <h2 class="title-portfolio-header"><strong>Clientes</strong> que confian en nosotros</h2>
+          <p class="message-portfolio-header">¡Disfrutamos <strong>crear!</strong> </p>
+          <p class="description-portfolio-header">Ofrecemos proyectos de óptima calidad cuidando los aspectos fundamentales que representan la imagen y marca de nuestros clientes.</p>
+        </div>
+
+      <div id="myBtnContainer" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+        <button class="btn-portfolio active-tab fuente" onclick="filterSelection('all')"> Todos</button>
+        <button class="btn-portfolio fuente" onclick="filterSelection('development')"> Web / App</button>
+        <button class="btn-portfolio fuente" onclick="filterSelection('branding')"> Branding</button>
+        <button class="btn-portfolio fuente" onclick="filterSelection('ar')"> Social Media</button>
+      </div>
+
+        <div class="row">
+
+            <div class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+                <img src="{% static 'images/mountains.jpg' %}" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <button id="btnModal">Ver más</button>
+              </div>
+            </div>
+
+              <div class="modal" id="modal">
+                <div class="modal-content">
+                  <span class="close" id="close">&times;</span>
+
+                  <p>Algo de texto en el modal..</p>
+                </div>
+              </div>
+
+            <div class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+              <img src="{% static 'images/lights.jpg' %}" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+              <img src="{% static 'images/nature.jpg' %}" alt="Nature" style="width:100%">
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio branding" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+                <img src="{% static 'images/cars1.jpg' %}" alt="Car" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio branding" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+              <img src="{% static 'images/cars2.jpg' %}" alt="Car" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio branding" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+              <img src="{% static 'images/cars3.jpg' %}" alt="Car" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio ar" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+                <img src="{% static 'images/people1.jpg' %}" alt="Car" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio ar" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+              <img src="{% static 'images/people2.jpg' %}" alt="Car" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="category-portfolio ar" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content">
+              <img src="{% static 'images/people3.jpg' %}" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
 </section>
 
 
