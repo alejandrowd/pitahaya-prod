@@ -666,7 +666,7 @@ p strong{
   grid-gap: 5px;
   height:100vh;
   grid-template-areas:  "metodologia-pq-nosotros metodologia-pq-nosotros" "metodologia-description metodologia-que-hacemos" "metodologia-slideshow metodologia-slideshow";
-  padding: 2em 15px 0 0;
+  padding: 3.3em 2em;
 }
 
 .item{
@@ -1000,7 +1000,7 @@ background-color:#cc0066 ;
   position: absolute;
   max-width: 62.3%;
   background: rgba(255,255,255,0.8);
-  padding: 2em 2em;
+  padding: 3.3em 2em;
 }
 
 canvas{
@@ -1251,8 +1251,8 @@ text-transform: uppercase;
  }
 
  .portfolio-bg{
-   background-color: #f4f4f4;
-padding-top: 3em;
+  background-color: #f4f4f4;
+  padding: 3.3em 2em;
  }
 
  .fuente{
@@ -1329,10 +1329,11 @@ padding-top: 3em;
 
   .contact-container{
     display:grid;
-    grid-template: 250px 1fr / 1fr 500px;
+    grid-template: 150px 1fr / 1fr 500px;
     grid-gap: 5px;
     height:100vh;
     grid-template-areas: "contact-header contact-header" "contact-left contact-right";
+    padding: 3.3em 2em;
   }
 
   .item-contact{
@@ -1342,6 +1343,7 @@ padding-top: 3em;
 
   .contact-header{
     grid-area: contact-header;
+    text-align: center;
   }
 
 /* .contacto-header{
@@ -1677,15 +1679,6 @@ outline:none;
 .mobile-slider{
   display: none;
 }
-
-
-
-
-
-
-
-
-
 
 
 

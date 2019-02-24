@@ -345,11 +345,13 @@
         </div>
 
         <div class="item-contact contact-left">
-          <form action="" class="form">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
+          {% include 'partials/_alerts.html' %}
+          <form action="{% url 'contact' %}" method="POST" class="form">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
             <div class="mensaje-formulario">
-            <textarea name="mensaje" placeholder="Mensaje" rows="20" ></textarea>
+            <textarea name="message" placeholder="Mensaje" rows="20" required></textarea>
             </div>
             <button type="submit">Enviar</button>
           </form>
