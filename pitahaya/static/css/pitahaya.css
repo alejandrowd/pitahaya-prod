@@ -596,9 +596,7 @@ p strong{
     text-rendering: optimizelegibility;
  }
 
- a:link {
-    -webkit-tap-highlight-color: #eb516d;
- }
+
 
  .home-btn {
     margin: 10px auto;
@@ -754,9 +752,7 @@ p strong{
    text-rendering: optimizelegibility;
 }
 
-a:link {
-   -webkit-tap-highlight-color: #eb516d;
-}
+
 
 
 
@@ -1682,7 +1678,7 @@ outline:none;
 
 
 
-
+/* MediaQuerys */
 
 
 @media screen and (max-width: 1366px){
