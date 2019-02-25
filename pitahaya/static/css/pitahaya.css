@@ -1883,6 +1883,8 @@ canvas{
   .header{
     display:block;
     height: auto;
+    position: relative;
+    z-index:0;
   }
   .header ul{
     display: block;

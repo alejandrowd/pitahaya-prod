@@ -1,0 +1,22 @@
+{% load static %}
+
+<i class="icon-menu burger-button" id="burgerMenu"></i>
+<header class="header" id="myHeader">
+  <div class="wrapper">
+
+    <figure class="logo">
+      <img class="big-screen scale-1-3" src="{% static 'images/brand/isotipo-pitahaya-color.svg' %}" alt="pitahaya - Digital agency" width="60px" height="60px" id="nav-logo"  >
+      <img class="small-screen" src="{% static 'images/brand/logotipo-pitahaya-white-footer.svg' %}" alt="pitahaya - Digital agency" width="150px" id="nav-logo"  >
+    </figure>
+
+    <nav class="menu">
+      <ul>
+        <li><a class="link-effect"  href="{% url 'hero' %}">Inicio</a></li>
+        <li><a id="agenciaMenu" class="link-effect"  href="{% url 'agencia' %}">Agencia</a></li>
+        <li><a id="serviciosMenu" class="link-effect"  href="{% url 'servicios' %}">Servicios</a></li>
+        <li><a class="link-effect"  href="{% url 'portfolio' %}">Clientes</a></li>
+        <li><a class="link-effect"  href="{% url 'contacto' %}">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
