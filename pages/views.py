@@ -21,3 +21,9 @@ def portfolio(request):
 
 def contacto(request):
     return redirect('/#contacto')
+
+def handler404(request):
+    return render(request, 'error-pages/404.html', status=404)
+
+def handler500(request):
+    return render(request, 'error-pages/500.html', status=500)

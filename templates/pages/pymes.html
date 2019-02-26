@@ -1,11 +1,11 @@
 {% extends 'base-inner.html' %}
 {% load static %}
-
+{% block title %} | Pymes{% endblock %}
 {% block content %}
 
 <section class="hero-pyme">
 				<div class="header-slide slide-3">
-					<img src="https://via.placeholder.com/1920x1020" alt="Slider Background" class="slider-background">
+					<img src="{% static 'images/pymes/pymes-bg-hero.png' %}" alt="Slider Background" class="slider-background">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 offset-lg-6">

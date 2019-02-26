@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
   <!-- Custom -->
   <link rel="stylesheet" href="{% static 'css/pitahaya.css' %}">
-  <title>Pitahaya | Agencia Digital</title>
+  <title>Pitahaya {% block title %}{% endblock %}</title>
 </head>
 <body>
   <script src="{% static 'js/three.js' %}"></script>
