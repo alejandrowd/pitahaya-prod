@@ -45,7 +45,7 @@ body::-webkit-scrollbar{
     background: black;
 }
 body::-webkit-scrollbar-thumb{
-    background: #941e5a;
+    background: #cc3366;
     border-radius: 4px;
 }
 
@@ -67,11 +67,15 @@ h1 {
  }
 
  h1 strong{
-   color: #cc0066;
+   color: #cc3366;
  }
 
  h2 strong{
-   color: #cc0066;
+   color: #cc3366;
+ }
+
+ h3 strong{
+   color: #cc3366;
  }
 
 h2 {
@@ -95,7 +99,7 @@ h6 {
 }
 
 p strong{
-  color: #cc0066;
+  color: #cc3366;
 }
 
 /* .home {
@@ -174,7 +178,7 @@ p strong{
 .link-effect::after{
   /* display: inline-block; */
   opacity: 0;
-  color: #cfde00;
+  color: #99cc33;
   /* -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
   transition: transform 0.3s, opacity 0.2s; */
@@ -262,7 +266,6 @@ p strong{
   text-transform: none;
   font-weight: 300;
   color: #fff;
-  font-style: italic;
   margin-top: 0;
   opacity:0;
   -webkit-animation: fadeIn 0.5s 1.5s 1 forwards;
@@ -660,10 +663,10 @@ p strong{
 
 .metodologia-container{
   display:grid;
-  grid-template: 150px 300px 1fr / 1fr 1fr;
+  grid-template: 150px 1fr 300px / 1fr;
   grid-gap: 5px;
   height:100vh;
-  grid-template-areas:  "metodologia-pq-nosotros metodologia-pq-nosotros" "metodologia-description metodologia-que-hacemos" "metodologia-slideshow metodologia-slideshow";
+  grid-template-areas:  "metodologia-pq-nosotros" "metodologia-slideshow" "metodologia-que-hacemos" ;
   padding: 3.3em 2em;
 }
 
@@ -779,14 +782,64 @@ p strong{
   grid-area: metodologia-slideshow;
 }
 
-.item:nth-of-type(3){
+.item:nth-of-type(2){
   margin: 0 auto;
   background-image: url("../images/metodologia-bg.png");
   background-repeat: no-repeat;
   position:relative;
   background-size: 100% auto;
   background-origin: content-box;
-  /* padding:10em 0 0; */
+  padding:4em 0 3em 0;
+}
+
+.button-link-0{
+	line-height: 60px;
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+  text-decoration: none;
+	border-radius: 30px;
+	background: #38d5e2;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	transition: all 0.2s;
+}
+
+.button-link-0:hover{
+	box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.button-link-0.style-4{
+	background-color: #cc3366;
+}
+
+.button-link-00{
+	line-height: 60px;
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+  text-decoration: none;
+	border-radius: 30px;
+  margin-top:1em;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+
+}
+
+.button-link-00:hover{
+	box-shadow: 0 0 10px 5px rgba(255,255,255,.2);
+	color: #fff;
+
+}
+.button-link-00.style-5{
+	background-color: #99cc33;
 }
 
 
@@ -918,6 +971,7 @@ p strong{
 }
 .metodologia-que-hacemos{
   grid-area: metodologia-que-hacemos;
+  text-align: center;
 }
 .metodologia-que-hacemos-right{
   grid-area: metodologia-que-hacemos-right;
@@ -1138,7 +1192,7 @@ text-transform: uppercase;
 .activo{
       /* background-blend-mode: color-dodge !important; */
       /* border-radius: 50%; */
-      background-color: #941e5a !important;
+      background-color: #cc3366 !important;
       color: #444444;
       /* background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#8cc63f), to(#cfde00));
       background-image: -webkit-linear-gradient(left, #8cc63f, #cfde00);
@@ -1243,7 +1297,7 @@ text-transform: uppercase;
  }
 
  .btn-portfolio.active-tab {
-   color: #941e5a;
+   color: #cc3366;
  }
 
  .portfolio-bg{
@@ -1319,7 +1373,11 @@ text-transform: uppercase;
 
 
   .contact-bg{
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url(../images/contacto-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 
 
@@ -1370,64 +1428,49 @@ text-transform: uppercase;
    padding:10px;
    font-family: 'Source Sans Pro', sans-serif;
    font-size:16px;
-   border:1px solid #941e5a;
+   border-bottom: 3px solid #cc3366;
    border-radius:5px;
-   /* box-sizing:border-box; */
+   background: rgba(0,0,0,0.8);
+   color:#fff;
    margin-bottom:10px;
    outline: none;
  }
  .form input:focus{
-   border-top: 1px solid #8CC63F;
-   border-bottom: 1px solid #CFDE00;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-   background-position: 0 0, 100% 0;
-   background-repeat: no-repeat;
-   -webkit-background-size: 1px 100%;
-   -moz-background-size: 1px 100%;
-   background-size: 1px 100%;
-
-   background-image: -webkit-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -webkit-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-   background-image: -moz-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -moz-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-   background-image: -o-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -o-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-   background-image: linear-gradient(to bottom, #8cc63f 0%, #CFDE00 100%), linear-gradient(to bottom, #8cc63f 0%, #CFDE00 100%);
+  border: 2px solid #99cc33;
  }
 
- .form button{
+ ::placeholder {
+   color: #fff;
 
-   display: inline-block;
-   line-height: 34px;
-   padding: 0 10px;
-   margin: auto;
-   text-align: center;
-   font-size: 16px;
-   text-transform: uppercase;
-   color: #cc0066;
-   text-decoration: none;
-   -webkit-transition: all 0.5s ease-in-out;
-   -moz-transition: all 0.5s ease-in-out;
-   -o-transition: all 0.5s ease-in-out;
-   transition: all 0.3s ease-in-out;
-   cursor: pointer;
-   background: rgba(255,255,255,0.7);
-  letter-spacing: 1.5px;
-  border:none;
- }
+}
 
+.button-link-form.style-6{
+	background-color: #99cc33;
+}
 
-.form button:hover {
+.form button{
+	line-height: 60px;
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+  text-decoration: none;
+	border-radius: 30px;
+  margin-top:1em;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
 
-    color: #444444;
-    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#8cc63f), to(#cfde00));
-    background-image: -webkit-linear-gradient(left, #8cc63f, #cfde00);
-    background-image: -moz-linear-gradient(left, #8cc63f, #cfde00);
-    background-image: -o-linear-gradient(left, #8cc63f, #cfde00);
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
- }
+}
+
+.button-link-form:hover{
+	box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+	color: #fff;
+
+}
+
 
 
  .mensaje-formulario textarea {
@@ -1437,51 +1480,21 @@ width: 100%;
 padding: 10px;
 font-family: 'Source Sans Pro', sans-serif;
 font-size: 16px;
-border: 1px solid #941e5a;
+border-bottom: 3px solid #cc3366;
 border-radius: 5px;
-/* box-sizing: border-box; */
+background: rgba(0,0,0,0.8);
+color:#fff;
 margin-bottom: 10px;
 outline:none;
 
   }
 
 .mensaje-formulario textarea:focus{
-  border-top: 1px solid #8CC63F;
-  border-bottom: 1px solid #CFDE00;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  -webkit-background-size: 1px 100%;
-  -moz-background-size: 1px 100%;
-  background-size: 1px 100%;
-
-  background-image: -webkit-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -webkit-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-  background-image: -moz-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -moz-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-  background-image: -o-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -o-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-  background-image: linear-gradient(to bottom, #8cc63f 0%, #CFDE00 100%), linear-gradient(to bottom, #8cc63f 0%, #CFDE00 100%);
+  border: 2px solid #99cc33;
 }
 
 
-.bordes{
 
-  border-top: 1px solid #8CC63F;
-  border-bottom: 1px solid #CFDE00;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  -webkit-background-size: 1px 100%;
-  -moz-background-size: 1px 100%;
-  background-size: 1px 100%;
-
-  background-image: -webkit-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -webkit-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-  background-image: -moz-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -moz-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-  background-image: -o-linear-gradient(top, #8cc63f 0%, #CFDE00 100%), -o-linear-gradient(top, #8cc63f 0%, #CFDE00 100%);
-  background-image: linear-gradient(to bottom, #8cc63f 0%, #CFDE00 100%), linear-gradient(to bottom, #8cc63f 0%, #CFDE00 100%);
-}
 
 
 
@@ -2229,5 +2242,11 @@ display:none;
     padding: 10px 0;
   }
 
+}
 
+@media (min-width: 320px){
+	.contacto-bg-responsive{
+    width: 100%;
+    height: auto;
+	}
 }

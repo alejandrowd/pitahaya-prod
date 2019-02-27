@@ -18,7 +18,7 @@
 								</p>
 							</div>
 							<div class="col-lg-6 offset-lg-6">
-								<a href="#" class="button-link-1 style-3 pushtop-30">FIND OUT HOW <i class="fa fa-caret-right"></i></a>
+								<a href="{% url 'contacto' %}" class="button-link-1 style-3 pushtop-30">CONOCE MÁS <i class="fa fa-caret-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -74,18 +74,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<p class="pretitle">WHAT WE DO</p>
-						<h3>Check our services and expertise</h3>
+						<p class="pretitle">¿QUÉ HACEMOS?</p>
+						<h3 class="h3-size">Ayudamos a nuestros clientes a acelerar su <strong>crecimiento.</strong></h3>
 						<p>
-							Nam liber tempor cum soluta nobis eleifend option congue
-							nihil imperdiet doming id quod mazim placerat facer
-							possim assum. Lorem ipsum dolor sit amet, consectetuer
-							adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+							Creamos, transformamos y optimizamos la experiencia del cliente / usuario a través
+							de la <strong>tecnología</strong> y el <strong>diseño de contenidos, productos y servicios
+							digitales.</strong>  Entendemos que un proceso de transformación digital debe activarse desde
+							distintos frentes de la compañía; en donde el Customer Experience debe ser el eje sobre el
+							cual se transforman los procesos operacionales y se modifica el modelo de negocio.
 						</p>
-
+						<a href="{% url 'contacto' %}" class="button-link-1 pushtop-30">COTIZAR</a>
 					</div>
 					<div class="col-lg-6">
-						<img src="https://via.placeholder.com/727x668" alt="widget-image">
+						<img src="{% static 'images/pymes/marketing-digital.png' %}" alt="widget-image">
 					</div>
 				</div>
 			</div>
@@ -95,17 +96,18 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<img src="https://via.placeholder.com/619x635" alt="widget-image" class="pull-right">
+						<img src="{% static 'images/pymes/marketing-productividad.png' %}" alt="widget-image" class="pull-right">
 					</div>
 					<div class="col-lg-6">
-						<p class="pretitle">OUR SERVICES</p>
-						<h3>It is our passion to create high quality</h3>
+						<p class="pretitle">NUESTRA METODOLOGÍA</p>
+						<h3 class="h3-size">Design thinking by <strong>pitahaya.</strong></h3>
 						<p>
-							Nam liber tempor cum soluta nobis eleifend option congue
-							nihil imperdiet doming id quod mazim placerat facer
-							possim assum. Lorem ipsum dolor sit amet, consectetuer
-							adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+							Para poder conectar con las personas, necesitamos entenderlas, saber qué es realmente lo que necesitan, les gusta
+							o están buscando. Necesitamos comenzar a formar parte de sus vidas. Para conseguirlo, hemos creado un proceso
+							propio basado en metodologías como el <strong> Design Thinking,</strong> que nos permite realizar y encontrar
+							la solución más adecuada, así como testeada y replanteada constantemente.
 						</p>
+						<a href="{% url 'contacto' %}" class="button-link-1 pushtop-30 pull-right">COTIZAR</a>
 
 					</div>
 				</div>

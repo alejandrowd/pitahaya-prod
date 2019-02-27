@@ -14,6 +14,10 @@ h2 > span:first-letter {
     text-transform: uppercase;
 }
 
+.h3-size{
+	font-size: 60px;
+}
+
 .footer-p{
 	display: block;
 	margin-block-start: 1em;
@@ -38,8 +42,8 @@ h2 > span:first-letter {
 	border-radius: 30px;
 	background: #38d5e2;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
 	font-weight: 600;
 	transition: all 0.2s;
 }
@@ -55,10 +59,15 @@ h2 > span:first-letter {
 	white-space: nowrap;
 }
 
+
+
+.pull-right {
+    float: right;
+}
 /*Typography $typography*/
 
 .pretitle{
-	font-family: 'Montserrat';
+	font-family: 'lato';
 	font-weight: 600;
 	color: #899ea7;
 	font-size: 14px;
@@ -68,21 +77,15 @@ h2 > span:first-letter {
 
 /*Header $header*/
 
-.page-header{
-	background: url('https://via.placeholder.com/1920x445');
-	background-size: cover;
-	padding: 180px 0 150px;
-}
+
 
 .page-header h2{
-	font-family: 'Segoe UI', sans-serif;
 	font-weight: 700;
 	font-size: 60px;
 	color: #fff;
 }
 
 .page-header p{
-	font-family: 'Work Sans', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	color: #fff;
@@ -105,14 +108,12 @@ h2 > span:first-letter {
 }
 
 .header-slide h2{
-	font-family: 'Segoe UI', sans-serif;
 	font-size: 76px;
 	color: #fff;
 	font-weight: 700;
 }
 
 .header-slide p{
-	font-family: 'Work Sans', sans-serif;
 	font-size: 23px;
 	color: #fff;
 	line-height: 48px;
