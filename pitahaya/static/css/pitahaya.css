@@ -1374,7 +1374,7 @@ text-transform: uppercase;
 
   .contact-bg{
     /* background-color: #fff; */
-    background-image: url(../images/contacto-bg.png);
+    background: url(../images/contacto-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -1796,7 +1796,9 @@ canvas{
 @media screen and (max-width:768px){
 
 
-
+  .contact-bg{
+    background:#fff;
+  }
 
   .mensaje-formulario textarea {
     font-size:1.375rem;
@@ -1882,6 +1884,7 @@ canvas{
   .contact-container{
     height: auto;
     grid-template-columns:1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:"contact-header" "contact-left" "contact-right";
   }
   .contact-header {
@@ -2245,8 +2248,7 @@ display:none;
 }
 
 @media (min-width: 320px){
-	.contacto-bg-responsive{
-    width: 100%;
-    height: auto;
+	.contact-bg{
+    background: #fff;
 	}
 }
