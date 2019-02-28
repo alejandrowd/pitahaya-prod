@@ -1330,6 +1330,9 @@ text-transform: uppercase;
     font-size: 17px;
  }
 
+.cursor-portfolio{
+  cursor: pointer;
+}
  .modal {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
@@ -1499,7 +1502,7 @@ outline:none;
 
 
 .contact-details i{
-  color:#941e5a;
+  color:#cc3366;
 }
 
 .telefono{
@@ -1524,12 +1527,12 @@ outline:none;
 }
 
 .redes-pitahaya{
-  text-align: center;
-  padding-top: 1.5em;
+
+  padding-top: 2em;
 }
 
 .redes-pitahaya i{
-  color:#941e5a;
+  color:#cc3366;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -1561,29 +1564,52 @@ outline:none;
 
  }
 
- .telefono ::after{
-    content: "0990753522";
+
+.telefono{
+  padding: 0 0 1.3em 0;
+}
+.telefono i{
+  font-weight: bold;
+}
+.telefono ::after{
+    content: "099 077 4020";
     margin: 22px;
     color: black;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
     font-family: source sans pro;
+    text-transform: uppercase;
+
  }
- .email ::after{
+
+
+.email ::after{
    content: "hola@pitahaya.ec";
    margin: 12px;
    color: black;
-   font-weight: normal;
-   font-size: 16px;
+   font-weight: 700;
+   font-size: 18px;
    font-family: source sans pro;
+   text-transform: uppercase;
+
  }
- .direccion ::after{
-   content: "Guayaquil";
+ /* .direccion ::after{
+   content: "Guayaquil-ecuador Urdesa Bálsamos 118 y Calle Única Edificio Semgroup Media Lab";
    margin: 20px;
    color: black;
-   font-weight: normal;
-   font-size: 16px;
+   font-weight: 700;
+   font-size: 18px;
    font-family: source sans pro;
+   text-transform: uppercase;
+ } */
+
+ .direccion p{
+   text-transform:uppercase;
+   font-weight: 700;
+   font-size: 18px;
+   font-family: source sans pro;
+   line-height: 1.4em;
+
  }
 
  #myVideo {

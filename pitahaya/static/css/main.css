@@ -40,7 +40,7 @@ h2 > span:first-letter {
 	text-align: center;
 	display: block;
 	border-radius: 30px;
-	background: #38d5e2;
+	background: #99cc33;
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15px;
@@ -134,7 +134,7 @@ h2 > span:first-letter {
 }
 
 .header-slide .button-link-1.style-3{
-	background-color: #4936fa;
+	background-color: #cc3366;
 }
 
 .header-slide .button-link-1.style-4{
