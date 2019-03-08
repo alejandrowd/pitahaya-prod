@@ -756,11 +756,6 @@ p strong{
 }
 
 
-
-
-
-
-
 .metodologia-description{
   grid-area: metodologia-description;
   /* padding:2em; */
@@ -944,13 +939,13 @@ p strong{
   height:15px;
   width:15px;
   margin:0 2px;
-  background-color:#941e5a;
+  background-color:#99cc33;
   border-radius:50%;
   display:inline-block;
   transition:background-color .6s ease;
       }
 .active,.dot:hover{
-  background-color:rgba(125,134,140,0.27);
+  background-color:#cc3366;
     }
 
 .mySlides h4{
@@ -1621,57 +1616,6 @@ outline:none;
    z-index: -1;
  }
 
- .isotipo-animado{
-   position:absolute;
-   top:454%;
-    left:-15%;
-   /* transform: translate(0%, 90%); */
-   width:25%;
-   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  opacity: 0.5;
-
- }
-
-
- path{
-   /* stroke: #fff;
-   fill: #fff; */
-   stroke-dasharray:350;
-   opacity: 10;
-   animation:animate 7s cubic-bezier(0,0.23,1,.1);
-   animation-iteration-count:infinite;
-   /* animation-direction: alternate-reverse; */
-   /* animation-direction: reverse; */
-   /* animation-delay: 1s; */
-   /* animation-fill-mode: backwards; */
- }
-
- @keyframes animate{
-   0%{
-     opacity: 0;
-     fill:none;
-     stroke-dasharray:0;
-   }
-   30%{
-     opacity: 10;
-     fill:none;
-     stroke-dasharray:350;
-     /* stroke:#cdde00; */
-   }
-   90%{
-     fill:rgba(148,30,90,1);
-
-   }
-   100%{
-     fill:rgba(148,30,90,1);
-     /* fill:none; */
-     stroke-dasharray:0;
-     stroke:#cdde00;
-   }
-
- }
 
 .small-screen{
   display:none;
@@ -1717,7 +1661,10 @@ outline:none;
 
 
 
-/* MediaQuerys */
+
+
+
+/* inicio de MediaQuerys */
 
 
 @media screen and (max-width: 1366px){
@@ -1765,7 +1712,7 @@ outline:none;
   }
 
   .metodologia-container{
-    grid-template: 150px 350px 1fr / 1fr 1fr;
+    grid-template: 150px 350px 1fr / 1fr;
   }
 
   .hero .logo .logo-brand {
@@ -1813,8 +1760,6 @@ canvas{
   grid-template-areas: "metodologia-pq-nosotros metodologia-pq-nosotros" "metodologia-description metodologia-description"  "metodologia-slideshow metodologia-slideshow" "metodologia-que-hacemos metodologia-que-hacemos";
 }
 }
-
-
 
 
 
@@ -1922,7 +1867,7 @@ canvas{
     display:block;
     height: auto;
     position: relative;
-    z-index:0;
+    /* z-index:0; */
   }
   .header ul{
     display: block;
@@ -2015,10 +1960,14 @@ canvas{
     grid-template-columns: 1fr;
   }
 
+  .metodologia-slideshow{
+  display: none;
+}
+
   .slider{
     position:relative;
     text-align:center;
-    color: grey;
+    color: #333;
     /* width:100%; */
   }
 
@@ -2111,6 +2060,8 @@ canvas{
 .servicios-responsive span:last-child:after{
   display:none;
 }
+
+
 
 
   .output-servicios{

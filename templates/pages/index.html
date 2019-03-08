@@ -25,7 +25,7 @@
   <div class="metodologia-bg">
     <div class="wrapper">
       <div class="metodologia-container">
-        <div class="item metodologia-pq-nosotros" data-sal-duration="300" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+        <div class="item metodologia-pq-nosotros" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300" data-sal-easing="ease-out-bounce">
           <h2>¿Por qué <strong>nosotros</strong>? </h2>
           <p>Como la misma manera de una pitahaya con su alto poder antioxidante, previniendo la oxidación de otras moléculas.
              Nosotros disponemos de altos beneficios que nos permite entender el proceso de transformación digital previniendo
@@ -37,7 +37,7 @@
           <h1>Design thinking by <strong>pitahaya.</strong></h1>
           <p>Para poder conectar con las personas, necesitamos entenderlas, saber qué es realmente lo que necesitan, les gusta o están buscando. Necesitamos comenzar a formar parte de sus vidas. Para conseguirlo, hemos creado un proceso propio basado en metodologías como el <strong> Design Thinking,</strong> que nos permite realizar y encontrar la solución más adecuada, así como testeada y replanteada constantemente.</p>
         </div> -->
-        <div class="item metodologia-slideshow" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+        <div class="item metodologia-slideshow" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="600" data-sal-easing="ease-out-bounce">
           <div class="slideshow-container">
              <div class="mySlides fade">
                  <img src="{% static 'images/metodologia-0.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
@@ -81,7 +81,7 @@
                <span class="dot" onclick='currentSlide(6)'></span>
              </div>
         </div>
-        <div class="item metodologia-que-hacemos" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+        <div class="item metodologia-que-hacemos" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="700" data-sal-easing="ease-out-bounce">
           <h1>¿ERES PYME?</h1>
           <P>CONOCE MÁS SOBRE NUESTRA METODOLOGÍA</P>
           <a href="{% url 'pymes' %}" class="button-link-0 style-4 pushtop-30">CONOCE MÁS </a>
@@ -94,7 +94,7 @@
   <div class="mobile-slider">
 
     <div class="slider">
-        <img src="{% static 'images/mobile/slider-metodologia1.jpg' %}" alt="">
+        <img src="{% static 'images/mobile/design-thinking.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Design thinking by pitahaya</h4>
         <p class="center-mobile-text bg-mobile-text">Trabajamos bajo un proceso propio basado en metodologías
            como Design Thinking y Agile, que nos permite analizar, encontrar, y testear
@@ -102,16 +102,37 @@
     </div>
 
     <div class="slider">
-        <img src="{% static 'images/mobile/slider-metodologia2.jpg' %}" alt="">
+        <img src="{% static 'images/mobile/design-thinking-descubrir.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Descubrir</h4>
         <p class="center-mobile-text bg-mobile-text">Nos incorporamos en el contexto del cliente para entender el panorama actual, problemas e hipótesis. Además estudiamos el contexto del usuario o consumidor final para entender su comportamiento y necesidades.</p>
     </div>
 
     <div class="slider">
-        <img src="{% static 'images/mobile/slider-metodologia3.jpg' %}" alt="">
+        <img src="{% static 'images/mobile/design-thinking-definir.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Definir</h4>
         <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
     </div>
+
+    <div class="slider">
+        <img src="{% static 'images/mobile/design-thinking-comprobar.png' %}" alt="">
+        <h4 class="top-center-mobile-text bg-mobile-text">Comprobar</h4>
+        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+    </div>
+
+    <div class="slider">
+        <img src="{% static 'images/mobile/design-thinking-desarrollo.png' %}" alt="">
+        <h4 class="top-center-mobile-text bg-mobile-text">Desarrollo</h4>
+        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+    </div>
+
+    <div class="slider">
+        <img src="{% static 'images/mobile/design-thinking-despegar.png' %}" alt="">
+        <h4 class="top-center-mobile-text bg-mobile-text">Despegar</h4>
+        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+    </div>
+
+
+
    </div>
 </section>
 
@@ -119,7 +140,7 @@
 <section class="servicios" id="servicios">
     <div class="servicios-bg" id="serviciosFloating">
       <div class="wrapper">
-            <div class="servicios-container">
+            <div class="servicios-container" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                   <div class="serv-item servicio-title">
                     <h1>Nuestros <strong>servicios</strong></h1>
                     <h3>Escuchamos, pensamos, creamos y te conectamos a tu audiencia</h3>
@@ -135,9 +156,10 @@
                   </div>
 
                   <!-- responsive -->
+
                   <div class="servicios-responsive estrategy-resp">
                     <img src="{% static 'images/estrategy-icon-movil.png' %}" alt="Servicio estratégico">
-                    <h4>Servicio Estratégico</h4>
+                    <h4>Servicio Estratégico </h4>
                     <p>Diseñamos un plan basado en estrategias, con el propósito de alcanzar objetivos establecidos, apoyados en un pensamiento analítico con destrezas técnicas y creativas.
                       Proporcionamos diversos conceptos a través de nuestro proceso PithayaThinking.</p>
                       <div class="lista-tareas">
@@ -178,6 +200,7 @@
                        </p>
                      </div>
                   </div>
+
                    <!-- fin responsive -->
 
                   <div class="serv-item output-servicios fade">
@@ -343,12 +366,12 @@
     <div class="wrapper">
 
       <div class="contact-container">
-        <div class="item-contact contact-header">
+        <div class="item-contact contact-header" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300" data-sal-easing="ease-out-bounce">
           <h2>¿Cuándo nos <strong>juntamos</strong>?</h2>
-          <p>¡Hola y gracias por llegar hasta aquí! Si deseas mayor información de nuestros Servicios o una Propuesta Económica llena el siguiente formulario ¡Nosotros nos pondremos en contacto contigo!</p>
+          <p>¡Hola y gracias por llegar hasta aquí! Empecemos tu proyecto ahora mismo, llena el siguiente formulario ¡Nosotros nos pondremos en contacto contigo!</p>
         </div>
 
-        <div class="item-contact contact-left">
+        <div class="item-contact contact-left" data-sal-duration="1200" data-sal="flip-up" data-sal-delay="700" data-sal-easing="ease-out-bounce">
           {% include 'partials/_alerts.html' %}
           <form action="{% url 'contact' %}" method="POST" class="form">
             {% csrf_token %}
@@ -361,7 +384,7 @@
           </form>
         </div>
 
-        <div class="item-contact contact-right">
+        <div class="item-contact contact-right" data-sal-duration="1200" data-sal="flip-down" data-sal-delay="900" data-sal-easing="ease-out-bounce">
             <!-- <div id="map"></div> -->
             <div class="contact-details">
                 <div class="telefono">
