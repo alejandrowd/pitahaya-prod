@@ -5,9 +5,11 @@
 <!-- Hero -->
 <section class="hero" id="hero">
   <div class="wrapper">
-    <video autoplay muted loop id="myVideo">
-      <source src="{% static 'videos/timelapse_sunset.mp4' %}" type="video/mp4">
-    </video>
+
+        <video autoplay muted loop id="myVideo">
+          <!-- <source src="{% static 'videos/timelapse_sunset.mp4' %}" type="video/mp4"> -->
+          <source src="{% static 'videos/f8.mp4' %}" type="video/mp4">
+        </video>
     <h1><strong>pitahaya</strong> es una agencia especializada en <strong>branding</strong>, <strong>diseño</<strong></strong>, <strong>marketing digital</strong> y <strong>desarrollo web</strong>.</h1>
     <div class=lines>
       <span class=side-lines></span>
@@ -42,32 +44,38 @@
              <div class="mySlides fade">
                  <img src="{% static 'images/metodologia-0.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
                  <h4 class="titulo-slider">Design thinking by pitahaya</h4>
-                 <p class="descripcion-slider">Trabajamos bajo un proceso propio basado en metodologías como Design Thinking y Agile, que nos permite analizar, encontrar, y testear la solución más adecuada para cada negocio en particular.</p>
+                 <p class="descripcion-slider">Nuestro proceso basado en el Design Thinking y Agile nos permite conocer el contexto
+                 de cada modelo de negocio, lo que nos lleva a analizar, descubrir y testear la solución más adecuada.</p>
              </div>
              <div class="mySlides fade">
                  <img  src="{% static 'images/metodologia-new-1.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
                  <h4 class="titulo-slider">Descubrir</h4>
-                 <p class="descripcion-slider">Nos incorporamos en el contexto del cliente para entender el panorama actual, problemas e hipótesis. Además estudiamos el contexto del usuario o consumidor final para entender su comportamiento y necesidades.</p>
+                 <p class="descripcion-slider">Formamos parte del contexto del cliente para comprender su situación actual,
+                 problemas e hipótesis. Asimismo analizamos el contexto del usuario final para entender sus necesidades y comportamiento.</p>
              </div>
              <div class="mySlides fade">
                  <img  src= "{% static 'images/metodologia-new-2.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
                  <h4 class="titulo-slider">Definir</h4>
-                 <p class="descripcion-slider">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+                 <p class="descripcion-slider">Estudiamos, traducimos y sintetizamos lo obtenido en la etapa “Descubrir”, transformándolo en
+                 oportunidades donde se originan las ideas y propuestas de valor tanto para el cliente como usuario final.</p>
              </div>
              <div class="mySlides fade">
                  <img  src= "{% static 'images/metodologia-new-3.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
                  <h4 class="titulo-slider">Comprobar</h4>
-                 <p class="descripcion-slider">Las ideas y conceptos son cuestionadas, criticadas y validadas. Creamos prototipos rápidos y los ponemos a prueba en el contexto donde fueron descubiertos. Retrocedemos, replanteamos, avanzamos y mejoramos hacia un concepto cada vez más aterrizado.</p>
+                 <p class="descripcion-slider">Los conceptos e ideas son criticadas, cuestionadas. Creamos prototipos rápidos poniéndolos a
+                 prueba en el contexto donde fueron descubiertos. Replanteamos y mejoramos hasta llegar a un concepto más aterrizado. </p>
              </div>
              <div class="mySlides fade">
                  <img  src= "{% static 'images/metodologia-new-4.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
                  <h4 class="titulo-slider">Desarrollar</h4>
-                 <p class="descripcion-slider">La dirección definida se comienza a desarrollar, haciéndose cada vez más real. Una vez terminada, la ponemos a prueba, para luego darle los últimos toques y tener una propuesta concreta.</p>
+                 <p class="descripcion-slider">El camino definido se empieza a desarrollar, acercándose cada vez más a la realidad.
+                 Una vez finalizada, la ponemos a prueba, para luego ajustar pequeños detalles y obtener una propuesta concreta.</p>
              </div>
              <div class="mySlides fade">
                  <img  src= "{% static 'images/metodologia-new-5.png' %}" style='width: 100%;' alt="Design thinking by pitahaya"/>
                  <h4 class="titulo-slider">Despegar</h4>
-                 <p class="descripcion-slider">Lo presentamos al usuario, lo lanzamos y medimos su impacto de acuerdo a los alcances definidos al inicio del proyecto. Es momento de "redescubrir" y entrar en un beta constante.</p>
+                 <p class="descripcion-slider">Se lo muestra al usuario, lo lanzamos y medimos su impacto de acuerdo a
+                 los alcances definidos en el proyecto. Es momento de “redescubrir”.</p>
              </div>
              <a class="prev" onclick='prevSlides(-1)'>&#10094;</a>
              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
@@ -276,18 +284,36 @@
 
         <div class="row">
 
-            <div class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-                <a id="btnModal"><img src="{% static 'images/mountains.jpg' %}" alt="Mountains" style="width:100%" class="cursor-portfolio"></a>
-                <h4>Mountains</h4>
+            <div id="btnModal" class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content cursor-portfolio">
+                <a><img src="{% static 'images/mountains.jpg' %}" alt="Mountains" style="width:100%"></a>
+                <div class="center-business">
+                  <h6>venta de filtros de agua</h6>
+                </div>
               </div>
             </div>
 
               <div class="modal" id="modal">
+
                 <div class="modal-content">
                   <span class="close" id="close">&times;</span>
+                  <img src="{% static 'images/portfolio/sika.jpg' %}" alt="" style="width:100%" class="image-modal-responsive">
 
-                  <p>Algo de texto en el modal..</p>
+                  <h2>Buen Trip <span>Store (En Desarrollo)</span></h2>
+                  <p>Desarrollo de estrategias de lanzamiento de marca, desarrollo de e-commerce, gestión y planificación de pauta digital. </p>
+                  <hr>
+                  <h3>Detalles del Proyecto</h3>
+                  <ul class="list-modal-project">
+                    <li><b>Servicios: </b>Desarrollo Web | Social Media | Marketing Digital | Diseño Gráfico | Publicidad Impresa | Diseño Multimedia</li>
+                    <li><b>Fecha: </b>Marzo, 2017 - Actualidad</li>
+                    <!-- <li><b>Visitar Fan Page: </b><a>Buen Trip Store<i aria-hidden="true" class="fa fa-external-link"></i></a></li> -->
+                    <hr>
+                    <div class="btn-holder">
+                      <a href="#" class="button-link-0 style-4 pushtop-30">VISITAR SITIO </a>
+                    </div>
+                  </ul>
+
+                  <!-- <p>Algo de texto en el modal..</p> -->
                 </div>
               </div>
 
@@ -396,7 +422,7 @@
                 </div>
                 <div class="direccion">
                   <!-- <i class="fas fa-map-marker-alt fa-1x"></i> -->
-                  <p>Guayaquil-ecuador <br /> Bálsamos 118 y Calle Única <br />Edificio Semgroup Media Lab</p>
+                  <p>Guayaquil-ecuador <br /> Bálsamos 118 y Calle Única <br />Edificio Semgroup</p>
                 </div>
 
                 <div class="redes-pitahaya">
