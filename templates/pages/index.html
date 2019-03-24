@@ -2,6 +2,12 @@
 {% load static %}
 {% block title %} | Agencia Digital{% endblock %}
 {% block content %}
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQQ877D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- Hero -->
 <section class="hero" id="hero">
   <div class="wrapper">
@@ -17,7 +23,7 @@
     </div>
     <span class=logo>
       <img class="logo-brand" src="{% static 'images/brand/logotipo-pitahaya-white-nuevo-2.svg' %}" alt="pitahaya - Agencia digital" width="210px">
-      <img class="isotipo-resp" src="{% static 'images/brand/isotipo-pitahaya-color.svg' %}" alt="pitahaya - Digital agency" width="35px" height="35px" id="nav-logo">
+      <img class="isotipo-resp" src="{% static 'images/brand/isotipo-pitahaya-color.svg' %}" alt="pitahaya - Digital agency" width="25px" height="25px" id="nav-logo">
     </span>
   </div>
 </section>
@@ -104,42 +110,44 @@
     <div class="slider">
         <img src="{% static 'images/mobile/design-thinking.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Design thinking by pitahaya</h4>
-        <p class="center-mobile-text bg-mobile-text">Trabajamos bajo un proceso propio basado en metodologías
-           como Design Thinking y Agile, que nos permite analizar, encontrar, y testear
-          la solución más adecuada para cada negocio en particular.</p>
+        <p class="center-mobile-text bg-mobile-text">Nuestro proceso basado en el Design Thinking y Agile nos permite conocer el contexto
+        de cada modelo de negocio, lo que nos lleva a analizar, descubrir y testear la solución más adecuada.</p>
     </div>
 
     <div class="slider">
         <img src="{% static 'images/mobile/design-thinking-descubrir.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Descubrir</h4>
-        <p class="center-mobile-text bg-mobile-text">Nos incorporamos en el contexto del cliente para entender el panorama actual, problemas e hipótesis. Además estudiamos el contexto del usuario o consumidor final para entender su comportamiento y necesidades.</p>
+        <p class="center-mobile-text bg-mobile-text">Formamos parte del contexto del cliente para comprender su situación actual,
+        problemas e hipótesis. Asimismo analizamos el contexto del usuario final para entender sus necesidades y comportamiento.</p>
     </div>
 
     <div class="slider">
         <img src="{% static 'images/mobile/design-thinking-definir.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Definir</h4>
-        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+        <p class="center-mobile-text bg-mobile-text">Estudiamos, traducimos y sintetizamos lo obtenido en la etapa “Descubrir”, transformándolo en
+        oportunidades donde se originan las ideas y propuestas de valor tanto para el cliente como usuario final.</p>
     </div>
 
     <div class="slider">
         <img src="{% static 'images/mobile/design-thinking-comprobar.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Comprobar</h4>
-        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+        <p class="center-mobile-text bg-mobile-text">Los conceptos e ideas son criticadas, cuestionadas. Creamos prototipos rápidos poniéndolos a
+        prueba en el contexto donde fueron descubiertos. Replanteamos y mejoramos hasta llegar a un concepto más aterrizado.</p>
     </div>
 
     <div class="slider">
         <img src="{% static 'images/mobile/design-thinking-desarrollo.png' %}" alt="">
-        <h4 class="top-center-mobile-text bg-mobile-text">Desarrollo</h4>
-        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+        <h4 class="top-center-mobile-text bg-mobile-text">Desarrollar</h4>
+        <p class="center-mobile-text bg-mobile-text">El camino definido se empieza a desarrollar, acercándose cada vez más a la realidad.
+        Una vez finalizada, la ponemos a prueba, para luego ajustar pequeños detalles y obtener una propuesta concreta.</p>
     </div>
 
     <div class="slider">
         <img src="{% static 'images/mobile/design-thinking-despegar.png' %}" alt="">
         <h4 class="top-center-mobile-text bg-mobile-text">Despegar</h4>
-        <p class="center-mobile-text bg-mobile-text">Entendemos, interpretamos y sintetizamos lo recogido en la etapa de “Descubrir”, y lo transformamos en oportunidades donde nacen las ideas y conceptos de valor tanto para nuestros clientes como para el usuario o consumidor final.</p>
+        <p class="center-mobile-text bg-mobile-text">Se lo muestra al usuario, lo lanzamos y medimos su impacto de acuerdo a
+        los alcances definidos en el proyecto. Es momento de “redescubrir”.</p>
     </div>
-
-
 
    </div>
 </section>
@@ -277,109 +285,96 @@
 
       <div id="myBtnContainer" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease-out-bounce">
         <button class="btn-portfolio active-tab fuente" onclick="filterSelection('all')"> Todos</button>
-        <button class="btn-portfolio fuente" onclick="filterSelection('development')"> Web / App</button>
+        <button class="btn-portfolio fuente" onclick="filterSelection('development')"> Web </button>
         <button class="btn-portfolio fuente" onclick="filterSelection('branding')"> Branding</button>
         <button class="btn-portfolio fuente" onclick="filterSelection('ar')"> Social Media</button>
       </div>
 
         <div class="row">
 
-            <div id="btnModal" class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+            <div id="" class="category-portfolio development btnModal" data-modal="modalOne" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
               <div class="content cursor-portfolio">
-                <a><img src="{% static 'images/mountains.jpg' %}" alt="Mountains" style="width:100%"></a>
+                <a><img src="{% static 'images/portfolio/clientes/bt-real-estate-marca.png' %}" alt="Web" style="width:100%"></a>
                 <div class="center-business">
-                  <h6>venta de filtros de agua</h6>
+                  <h6>BT Real Estate</h6>
                 </div>
               </div>
             </div>
 
-              <div class="modal" id="modal">
+              <div class="modal" id="modalOne">
 
                 <div class="modal-content">
                   <span class="close" id="close">&times;</span>
-                  <img src="{% static 'images/portfolio/sika.jpg' %}" alt="" style="width:100%" class="image-modal-responsive">
-
-                  <h2>Buen Trip <span>Store (En Desarrollo)</span></h2>
-                  <p>Desarrollo de estrategias de lanzamiento de marca, desarrollo de e-commerce, gestión y planificación de pauta digital. </p>
+                  <img src="{% static 'images/portfolio/web-btr-real-estate.png' %}" alt="web" style="width:100%" class="image-modal-responsive">
+                  <h2>Bt <strong>Real Estate</strong></h2>
+                  <p>Desarrollo de sitio web enfocado en promocionar listado de casas en venta.</p>
                   <hr>
                   <h3>Detalles del Proyecto</h3>
                   <ul class="list-modal-project">
-                    <li><b>Servicios: </b>Desarrollo Web | Social Media | Marketing Digital | Diseño Gráfico | Publicidad Impresa | Diseño Multimedia</li>
-                    <li><b>Fecha: </b>Marzo, 2017 - Actualidad</li>
-                    <!-- <li><b>Visitar Fan Page: </b><a>Buen Trip Store<i aria-hidden="true" class="fa fa-external-link"></i></a></li> -->
+                    <li><b>Servicios: </b>Desarrollo Web</li>
+                    <li><b>Fecha: </b>Febrero, 2019</li>
                     <hr>
                     <div class="btn-holder">
-                      <a href="#" class="button-link-0 style-4 pushtop-30">VISITAR SITIO </a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://cookiehousedev.com/" class="button-link-0 style-4 pushtop-30">VISITAR SITIO </a>
                     </div>
                   </ul>
-
-                  <!-- <p>Algo de texto en el modal..</p> -->
                 </div>
               </div>
 
-            <div class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-              <img src="{% static 'images/lights.jpg' %}" alt="Lights" style="width:100%">
-                <h4>Lights</h4>
-                <p>Lorem ipsum dolor..</p>
+
+
+            <div id="" class="category-portfolio branding btnModal" data-modal="modalTwo" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content cursor-portfolio">
+                <img src="{% static 'images/portfolio/clientes/somos-vita-marca.png' %}" alt="Branding" style="width:100%">
+                <div class="center-business">
+                  <h6>Somos Vita | Distribuidores</h6>
+                </div>
               </div>
             </div>
 
-            <div class="category-portfolio development" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-              <img src="{% static 'images/nature.jpg' %}" alt="Nature" style="width:100%">
-                <h4>Forest</h4>
-                <p>Lorem ipsum dolor..</p>
+            <div class="modal" id="modalTwo">
+
+              <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="{% static 'images/portfolio/somos-vita.png' %}" alt="Branding" style="width:100%" class="image-modal-responsive">
+                <h2>Somos <strong>Vita</strong></h2>
+                <p>Diseño de Imagen Corporativa.</p>
+                <hr>
+                <h3>Detalles del Proyecto</h3>
+                <ul class="list-modal-project">
+                  <li><b>Servicios: </b>branding</li>
+                  <li><b>Fecha: </b>Marzo, 2019</li>
+                </ul>
               </div>
             </div>
 
-            <div class="category-portfolio branding" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-                <img src="{% static 'images/cars1.jpg' %}" alt="Car" style="width:100%">
-                <h4>Retro</h4>
-                <p>Lorem ipsum dolor..</p>
+
+
+            <div id="" class="category-portfolio branding btnModal" data-modal="modalThree" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+              <div class="content cursor-portfolio">
+                <img src="{% static 'images/portfolio/clientes/rotoplas-marca.png' %}" alt="Branding" style="width:100%">
+                <div class="center-business">
+                  <h6>Rotoplas | Fabricantes</h6>
+                </div>
               </div>
             </div>
 
-            <div class="category-portfolio branding" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-              <img src="{% static 'images/cars2.jpg' %}" alt="Car" style="width:100%">
-                <h4>Fast</h4>
-                <p>Lorem ipsum dolor..</p>
+            <div class="modal" id="modalThree">
+              <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="{% static 'images/portfolio/rotoplas.png' %}" alt="Branding" style="width:100%" class="image-modal-responsive">
+                <h2>Rotoplas</h2>
+                <p>Diseño Corporativo para activaciones BTL.</p>
+                <hr>
+                <h3>Detalles del Proyecto</h3>
+                <ul class="list-modal-project">
+                  <li><b>Servicios: </b>branding</li>
+                  <li><b>Fecha: </b>Noviembre, 2018</li>
+                </ul>
               </div>
             </div>
 
-            <div class="category-portfolio branding" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-              <img src="{% static 'images/cars3.jpg' %}" alt="Car" style="width:100%">
-                <h4>Classic</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
 
-            <div class="category-portfolio ar" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-                <img src="{% static 'images/people1.jpg' %}" alt="Car" style="width:100%">
-                <h4>Girl</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-
-            <div class="category-portfolio ar" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-              <img src="{% static 'images/people2.jpg' %}" alt="Car" style="width:100%">
-                <h4>Man</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-
-            <div class="category-portfolio ar" data-sal-duration="1200" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-              <div class="content">
-              <img src="{% static 'images/people3.jpg' %}" alt="Car" style="width:100%">
-                <h4>Woman</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
         </div>
 
     </div>
@@ -404,7 +399,7 @@
             <input type="text" name="name" placeholder="Nombre" required>
             <input type="email" name="email" placeholder="Email" required>
             <div class="mensaje-formulario">
-            <textarea name="message" placeholder="Mensaje" rows="15" required></textarea>
+            <textarea name="message" placeholder="¿Cómo te contactamos? Llamada | Video llamada | Reunión" rows="15" required></textarea>
             </div>
             <button type="submit" class="button-link-form style-6">Enviar</button>
           </form>
@@ -428,8 +423,8 @@
                 <div class="redes-pitahaya">
                   <i class="fab fa-facebook-square fa-3x"></i>
                   <i class="fab fa-instagram fa-3x"></i>
-                  <i class="fab fa-youtube fa-3x"></i>
-                  <i class="fab fa-linkedin-in fa-3x"></i>
+                  <!-- <i class="fab fa-youtube fa-3x"></i> -->
+                  <!-- <i class="fab fa-linkedin-in fa-3x"></i> -->
                 </div>
             </div>
         </div>

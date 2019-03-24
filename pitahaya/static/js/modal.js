@@ -1,27 +1,22 @@
-//modal
 
-var modal=document.getElementById('modal');
-var btnModal = document.getElementById('btnModal');
-var closeModal= document.getElementById('close');
+var modalBtns = [...document.querySelectorAll(".btnModal")];
+modalBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
+});
 
-btnModal.onclick = function()
-{
-  modal.style.display = "block";
-}
-
-closeModal.onclick = function()
-{
-  modal.style.display = "none";
-}
-
-window.onclick = function(afuera)
-{
-  if (afuera.target == modal)
-  {
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
     modal.style.display = "none";
   }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
 }
-
-
-
-// end modal

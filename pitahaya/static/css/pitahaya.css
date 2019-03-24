@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb{
 
 
 h1,h2,h3,h4,h5,h6{
-  color:#000;
+  color:#7d7d7d;
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -98,8 +98,20 @@ h6 {
   font-size: 16px;
 }
 
+p{
+  color:#7d7d7d;
+}
+
 p strong{
   color: #cc3366;
+}
+
+hr{
+  border: 0.5px solid #cc3366;
+}
+
+footer p{
+  color:#fff;
 }
 
 /* .home {
@@ -850,7 +862,6 @@ p strong{
 }
 
 .descripcion-slider{
-  color:black !important;
   text-align: center;
 }
 
@@ -1147,6 +1158,11 @@ text-transform: uppercase;
   padding: 0 15px;
 
 }
+
+.output-servicios p{
+  color:#fff;
+}
+
 .serv-item.opcion.activo h4 {
     color: white;
 }
@@ -1262,9 +1278,9 @@ text-transform: uppercase;
 
  /* Content */
  .content {
-   background-color: white;
+   /* background-color: white; */
    padding: 10px;
-   box-shadow: 0 4px 8px 0px rgba(0,0,0,0.8);
+   /* box-shadow: 0 4px 8px 0px rgba(0,0,0,0.8); */
    transition: transform .3s ease-out;
  }
  .content:hover{
@@ -1349,6 +1365,10 @@ text-transform: uppercase;
    padding: 20px;
    border: 1px solid #888;
    max-width: 600px;
+ }
+
+ .modal-content h2{
+   margin-top: 10px;
  }
 
  /* The Close Button */
@@ -1567,25 +1587,23 @@ outline:none;
   font-weight: bold;
 }
 .telefono ::after{
-    content: "099 077 4020";
+    content: "098 748 0456";
     margin: 22px;
-    color: black;
+    color: #7d7d7d;
     font-weight: 700;
     font-size: 18px;
     font-family: source sans pro;
-    text-transform: uppercase;
 
  }
 
 
 .email ::after{
-   content: "hola@pitahaya.ec";
+   content: "admin@pitahaya.ec";
    margin: 12px;
-   color: black;
+   color: #7d7d7d;
    font-weight: 700;
    font-size: 18px;
    font-family: source sans pro;
-   text-transform: uppercase;
 
  }
  /* .direccion ::after{
@@ -1628,7 +1646,7 @@ outline:none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(148,30,90, .8);
+  background: rgba(204,51,102, .8);
   display: none;
   line-height: 40px;
   text-align: center;
@@ -1911,7 +1929,6 @@ canvas{
     justify-content: center;
     height:40px;
     font-size: 1.5em;
-    text-decoration: underline;
     margin-bottom: .5em;
   }
   .header .logo{
@@ -1920,7 +1937,7 @@ canvas{
 
   .menu{
     position:fixed;
-    background:rgba(148,30,90,0.8);
+    background:rgba(204,51,102,0.8);
     z-index: 3;
     top: 0;
     left: 100vw;
