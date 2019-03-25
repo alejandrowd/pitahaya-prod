@@ -2,7 +2,9 @@
 {% load static %}
 {% block title %} | 500 Page{% endblock %}
 {% block content %}
+  <div class="error-content">
   <h1>Uhmm..</h1>
   <p>Lo sentimos, la página que estas buscando aún no existe, por favor <strog>Vuelve a Iniciar</strog>.</p>
-  <a href="{% url 'index' %}" class="button-link-1 style-3 pushtop-30">CONOCE MÁS <i class="fa fa-caret-right"></i></a>
+  <a href="{% url 'index' %}" class="button-link-1 style-3 pushtop-30">Inicio <i class="fa fa-caret-right"></i></a>
+  </div>
 {% endblock %}
