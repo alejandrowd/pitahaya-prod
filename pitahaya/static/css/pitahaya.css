@@ -1659,6 +1659,16 @@ outline:none;
   font-size: 20px;
 }
 
+.error-bg{
+
+  position: relative;
+  background: url('../images/aparticula_homepage_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #f4f4f4;
+}
 
 .hero .logo .isotipo-resp{
   position: absolute;
