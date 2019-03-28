@@ -1645,6 +1645,8 @@ outline:none;
 	 animation: float 6s ease-in-out infinite;
  }
 
+
+
  @keyframes float {
  	0% {
  		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -1660,6 +1662,15 @@ outline:none;
  	}
  }
 
+ #errorPage {
+   position: absolute;
+   right: 0;
+   /* bottom: 0; */
+   min-width: 100%;
+   min-height: 100%;
+   z-index: -1;
+   /* background: #0a0a0a; */
+ }
 
 .small-screen{
   display:none;
